@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genera Reporte</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-6">
+
+    <!-- Fila 1 -->
+    <div class="row align-items-center mb-3">
+        <div class="col-auto">
+            <button class="btn btn-primary btn-lg" onclick="mostrarImagenU()">
+                Add Ubication
+            </button>
+        </div>
+
+        <div class="col">
+            <img src="Images/Ubicacion1.png"
+                 id="imgUbicacion"
+                 alt="Ubicacion"
+                 class="img-fluid borderer"
+                 style="max-width:300px; max-height:250px; display: none;">  
+        </div>    
+    </div>
+
+    <div class="row align-items-center mb-3">
+     
+        <div class="col-auto">
+            <button class="btn btn-primary btn-lg" onclick="mostrarImagenB()">
+                Add Evidence
+            </button>
+        </div>
+
+        <div class="col">
+            <img src="Images/Bache1.png"
+                id="imgBache"
+                 alt="Bache"
+                 class="img-fluid borderer"
+                 style="max-width:300px; max-height:250px; display: none;">
+
+        </div>
+    </div>
+
+        <div class="row align-items-center mb-3">
+     
+        <div class="col-auto">
+            <button class="btn btn-success btn-lg" onclick="window.location.href='Confirmacion.html'">
+                    Create Report
+                </button>
+        </div>
+
+        <div class="col">
+            <img src="Images/Bache1.png"
+                id="imgBache"
+                 alt="Bache"
+                 class="img-fluid borderer"
+                 style="max-width:300px; max-height:250px; display: none;">
+
+        </div>
+    </div>
+
+
+        </div>
+
+</div>
+
+
+
+ <script >
+function mostrarImagenU() {
+        document.getElementById("imgUbicacion").style.display = "block";
+    }
+
+    function mostrarImagenB() {
+        document.getElementById("imgBache").style.display = "block";
+    }
+ </script> 
+
+</body>
+</html>
